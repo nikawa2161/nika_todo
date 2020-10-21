@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'hamlit'
+gem 'annotate'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -43,6 +44,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'erb2haml'
+  gem 'rubocop-rails'
 end
 
 group :test do
