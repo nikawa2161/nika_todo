@@ -68,3 +68,36 @@ a {
   position: absolute;
   bottom: 0;
 }
+
+.many-card {
+width: 362px;
+height: 161px;
+left: 30px;
+top: 161px;
+
+background: #F4F4F4;
+border-radius: 10px;
+
+}
+
+
+.care_new {
+width: 362px;
+height: 160px;
+left: 30px;
+top: 348px;
+margin-top: 30px;
+background: #FFFFFF;
+border: 1px dashed rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+
+  h2 {
+    text-align: center;
+    padding: 50px;
+    height: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+  }
+}

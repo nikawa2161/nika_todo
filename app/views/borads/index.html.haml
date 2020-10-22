@@ -1,2 +1,11 @@
 %h1
-  こんにちは
+  ALL Boards
+- @boards.each do |board|
+  %div.many-card
+    %h2
+      = board.title 
+    %p
+      = board.content
+%div.care_new
+  %h2
+    + Add new bords
