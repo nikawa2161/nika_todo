@@ -13,4 +13,8 @@
       .header_logos
         %p.header_title
           Boardas
+    - if flash.present?
+      .flash
+        - flash.each do |key, value|
+          %div{:class => key}= value
     = yield
