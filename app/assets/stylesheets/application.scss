@@ -192,3 +192,31 @@ textarea {
     opacity: 0;
   }
 }
+
+// image
+.header_back {
+  float: right;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  left: 352px;
+  top: 10px;
+}
+
+.profile_image {
+  width: 40px;
+  height: 40px;
+  left: 352px;
+  top: 10px;
+}
+
+.board {
+  margin: 16px 16px;
+  padding: 16px 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+}
+.board_content {
+  opacity: 0.4;
+  
+}
