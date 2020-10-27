@@ -6,6 +6,16 @@
       = board.title 
     %p
       = board.content
+    - if board.user.present?
+      %p= board.user.display_name
+    .board_detail_actions
+      .dropdown
+        = image_tag 'actions.svg', class: 'dropbtn'
+        .dropdown-content.mini
+          %a{:href => "#"} 編集する
+          %a{:href => "#"}　削除する
+
+    
 %div.card_new
   %h2
     + Add new bords
