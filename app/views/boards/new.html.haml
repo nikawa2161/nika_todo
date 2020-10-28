@@ -1,16 +1,19 @@
-%div
-  %ul
-    - @board.errors.full_messages.each do |message|
-      %li= message
-  %h1
-    New Board
-  = form_with(model: @board, url: boards_path, method: 'post', local: true) do |f|
-    %div
-    = f.label :title, 'title'
-    %div
-      = f.text_field :title, class: 'text'
-    %div
-      = f.label :content, 'content'
-    %div
-      = f.text_area :content
-    = f.submit 'Submit', class: 'btn-primary'
+%h1
+  Brackets
+- @boards.each do |board|
+  %div.many-card
+    %h2
+      = board.title 
+    %p
+      = board.content
+    - if board.user.present?
+      %p= board.user.display_name
+    .board_detail_actions
+      .dropdown
+        = image_tag 'actions.svg', class: 'dropbtn'
+        .dropdown-content.mini
+          = link_to '編集する', edit_board_path(board)
+          = link_to '削除する', board_path(board), data: { method: 'delete', confirm: '本当に削除してもよろしいですか？' }
+%div.card_new
+  %h2
+    + Add new boards
