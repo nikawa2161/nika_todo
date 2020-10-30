@@ -4,3 +4,10 @@
     = @board.content
   .image_profile
     = image_tag '123456.png', class: 'profile_image'
+
+.board
+  %h2 カード一覧
+  - @cards.each do |card|
+    .board_card
+      %p= card.title
+      %p= card.content

@@ -14,4 +14,7 @@
 #  index_cards_on_board_id  (board_id)
 #
 class Card < ApplicationRecord
+  belongs_to :board
+  validates :title, presence: true
+  validates :content, presence: true
 end
